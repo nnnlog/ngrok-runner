@@ -1,0 +1,9 @@
+{
+  "name": "ngrok-bot",
+  "version": "1.0.0",
+  "dependencies": {
+    "@rauschma/stringio": "^1.4.0",
+    "node-telegram-bot-api": "^0.51.0",
+    "tail": "^2.2.0"
+  }
+}
