@@ -26,7 +26,7 @@ const run = () => {
     fs.writeFileSync(path, '');
     console.log(`Start ngrok...`);
     setTimeout(() => {
-        const proc = spawn("ngrok", ["tcp", "3389", `--log=${path}`, "--config=C:\\Users\\Administrator\\.ngrok2\\ngrok.yml"], {
+        const proc = spawn("ngrok", ["tcp", "22", `--log=${path}`], {
             stdio: 'ignore'
         });
 
@@ -41,7 +41,7 @@ const run = () => {
 run();
 
 const run1 = () => {
-    const proc = spawn(`main.exe`, [], {
+    const proc = spawn(`${__dirname}/main`, [], {
         stdio: 'ignore',
     });
 
@@ -51,4 +51,4 @@ const run1 = () => {
     });
 };
 
-//run1();
+run1();
